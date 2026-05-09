@@ -1,0 +1,138 @@
+:root {
+  --cc-bg: rgba(0, 0, 0, 0.60);
+}
+
+notificationwindow, blankwindow {
+  background: transparent !important;
+}
+
+* {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 14px;
+}
+
+.notification-row {
+  outline: none;
+  margin: 0;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #00FFFF; /* Cyan neon */
+  border: 1px solid #FF00FF; /* Magenta neon */
+}
+
+.notification-row:hover {
+  background-color: rgba(0, 255, 255, 0.1); /* Hover cyan */
+}
+
+.control-center {
+  background: rgba(0, 0, 0, 0.65) !important;
+  background-color: rgba(0, 0, 0, 0.65) !important;
+  border: 1px solid rgba(0, 255, 255, 0.6) !important;
+  border-radius: 15px;
+  color: #FFFFFF;
+}
+
+.control-center-list {
+  background-color: transparent;
+}
+
+.control-center-list-placeholder {
+  color: #FF00FF;
+  font-style: italic;
+}
+
+.notification {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  border: 1px solid #FFFF00;
+  color: #00FFFF;
+}
+
+.notification-content {
+  background-color: transparent;
+}
+
+.notification-default-action,
+.notification-action {
+  background-color: #FF00FF;
+  color: #000000;
+  border-radius: 5px;
+}
+
+.notification-default-action:hover,
+.notification-action:hover {
+  background-color: #00FFFF;
+}
+
+.title {
+  color: #FFFF00;
+  font-weight: bold;
+}
+
+.dnd {
+  color: #FF00FF;
+}
+
+.widget-label > label {
+  color: #00FFFF;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px solid #FF00FF;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.widget-buttons-grid {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px solid #FFFF00;
+  border-radius: 10px;
+  color: #00FFFF;
+  padding: 10px;
+}
+
+.widget-buttons-grid flowboxchild > button {
+  background-color: #FF00FF;
+  color: #000000;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px 10px;
+  border: none;
+}
+
+.widget-buttons-grid flowboxchild > button:hover {
+  background-color: #00FFFF;
+  color: #000000;
+}
+
+.widget-menubar {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px solid #FFFF00;
+  border-radius: 10px;
+  color: #00FFFF;
+  padding: 10px;
+}
+
+.widget-menubar > .menu-button-bar > .start,
+.widget-menubar > .menu-button-bar > .end {
+  display: flex;
+  align-items: center;
+}
+
+.widget-menubar > .menu-button-bar > .start button,
+.widget-menubar > .menu-button-bar > .end button,
+.widget-menubar > .menu-button-bar > .end > .widget-menubar-container button {
+  background-color: #FF00FF;
+  color: #000000;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px 10px;
+  border: none;
+}
+
+.widget-menubar > .menu-button-bar > .start button:hover,
+.widget-menubar > .menu-button-bar > .end button:hover,
+.widget-menubar > .menu-button-bar > .end > .widget-menubar-container button:hover {
+  background-color: #00FFFF;
+  color: #000000;
+}

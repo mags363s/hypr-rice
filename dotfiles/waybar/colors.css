@@ -1,0 +1,216 @@
+
+# /* -------- 💫 https://www.youtube.com/@Ruben-Linux 💫 ------- */
+# /* ............ Scale of variet colors for waybar........... */
+# /* ------------ 👍 designed by: Ruben_&_Linux:~  👍 ------- */
+
+/* Random themes */
+
+@define-color background-dark rgba(30, 31, 41, 230);
+@define-color background      rgba(33,32,34,0.25);
+@define-color background      #282a36;
+@define-color selection       #44475a;
+@define-color foreground      #f8f8f2;
+@define-color comment         #6272a4;
+@define-color cyan            #8be9fd;
+@define-color green           #50fa7b;
+@define-color orange          #ffb86c;
+@define-color pink            #ff79c6;
+@define-color purple          #bd93f9;
+@define-color red             #ff5555;
+@define-color yellow          #f1fa8c;
+@define-color white           #ffffff;
+@define-color black           #000000;
+
+@define-color foreground2     #FAF0E8;
+@define-color cursor          #FAF0E8;
+
+@define-color color0          #474649;
+@define-color color1          #1A171F;
+@define-color color2          #143551;
+@define-color color3          #99352B;
+@define-color color4          #2B5C98;
+@define-color color5          #0DB0B6;
+@define-color color6          #B4A08E;
+@define-color color7          #EFE2D6;
+@define-color color8          #A79E95;
+@define-color color9          #231F29;
+@define-color color10         #1B466C;
+@define-color color11         #CC463A;
+@define-color color12         #3A7BCA;
+@define-color color13         #12EBF3;
+@define-color color14         #F0D5BD;
+@define-color color15         #EFE2D6;
+
+/* Catppuccin Mocha */
+
+@define-color rosewater       #f5e0dc;
+@define-color flamingo        #f2cdcd;
+@define-color pink            #f5c2e7;
+@define-color mauve           #cba6f7;
+@define-color red             #f38ba8;
+@define-color maroon          #eba0ac;
+@define-color peach           #fab387;
+@define-color yellow          #f9e2af;
+@define-color green           #a6e3a1;
+@define-color teal            #94e2d5;
+@define-color sky             #89dceb;
+@define-color sapphire        #74c7ec;
+@define-color blue            #89b4fa;
+@define-color lavender        #b4befe;
+@define-color text            #cdd6f4;
+@define-color subtext1        #bac2de;
+@define-color subtext0        #a6adc8;
+@define-color overlay2        #9399b2;
+@define-color overlay1        #7f849c;
+@define-color overlay0        #6c7086;
+@define-color surface2        #585b70;
+@define-color surface1        #45475a;
+@define-color surface0        #313244;
+@define-color base            #1e1e2e;
+@define-color mantle          #181825;
+@define-color crust           #11111b;
+
+/* Catppuccin Macchiato */
+
+@define-color rosewater       #f4dbd6;
+@define-color flamingo        #f0c6c6;
+@define-color pink            #f5bde6;
+@define-color mauve           #c6a0f6;
+@define-color red             #ed8796;
+@define-color maroon          #ee99a0;
+@define-color peach           #f5a97f;
+@define-color yellow          #eed49f;
+@define-color green           #a6da95;
+@define-color teal            #8bd5ca;
+@define-color sky             #91d7e3;
+@define-color sapphire        #7dc4e4;
+@define-color blue            #8aadf4;
+@define-color lavender        #b7bdf8;
+@define-color text            #cad3f5;
+@define-color subtext1        #b8c0e0;
+@define-color subtext0        #a5adcb;
+@define-color overlay2        #939ab7;
+@define-color overlay1        #8087a2;
+@define-color overlay0        #6e738d;
+@define-color surface2        #5b6078;
+@define-color surface1        #494d64;
+@define-color surface0        #363a4f;
+@define-color base            #24273a;
+@define-color mantle          #1e2030;
+@define-color crust           #181926;
+
+/* Catppuccin Frappe */
+
+@define-color rosewater       #f2d5cf;
+@define-color flamingo        #eebebe;
+@define-color pink            #f4b8e4;
+@define-color mauve           #ca9ee6;
+@define-color red             #e78284;
+@define-color maroon          #ea999c;
+@define-color peach           #ef9f76;
+@define-color yellow          #e5c890;
+@define-color green           #a6d189;
+@define-color teal            #81c8be;
+@define-color sky             #99d1db;
+@define-color sapphire        #85c1dc;
+@define-color blue            #8caaee;
+@define-color lavender        #babbf1;
+@define-color text            #c6d0f5;
+@define-color subtext1        #b5bfe2;
+@define-color subtext0        #a5adce;
+@define-color overlay2        #949cbb;
+@define-color overlay1        #838ba7;
+@define-color overlay0        #737994;
+@define-color surface2        #626880;
+@define-color surface1        #51576d;
+@define-color surface0        #414559;
+@define-color base            #303446;
+@define-color mantle          #292c3c;
+@define-color crust           #232634;
+
+/* Catppuccin Latte */
+
+@define-color rosewater       #dc8a78;
+@define-color flamingo        #dd7878;
+@define-color pink            #ea76cb;
+@define-color mauve           #8839ef;
+@define-color red             #d20f39;
+@define-color maroon          #e64553;
+@define-color peach           #fe640b;
+@define-color yellow          #df8e1d;
+@define-color green           #40a02b;
+@define-color teal            #179299;
+@define-color sky             #04a5e5;
+@define-color sapphire        #209fb5;
+@define-color blue            #1e66f5;
+@define-color lavender        #7287fd;
+@define-color text            #4c4f69;
+@define-color subtext1        #5c5f77;
+@define-color subtext0        #6c6f85;
+@define-color overlay2        #7c7f93;
+@define-color overlay1        #8c8fa1;
+@define-color overlay0        #9ca0b0;
+@define-color surface2        #acb0be;
+@define-color surface1        #bcc0cc;
+@define-color surface0        #ccd0da;
+@define-color base            #eff1f5;
+@define-color mantle          #e6e9ef;
+@define-color crust           #dce0e8;
+
+/* Gruvbox Dark */
+
+@define-color bg0_h           #1d2021;
+@define-color bg0             #282828;
+@define-color bg1             #3c3836;
+@define-color bg2             #504945;
+@define-color bg3             #665c54;
+@define-color bg4             #7c6f64;
+@define-color gray            #928374;
+@define-color fg4             #a89984;
+@define-color fg3             #bdae93;
+@define-color fg2             #d5c4a1;
+@define-color fg1             #ebdbb2;
+@define-color fg0             #fbf1c7;
+@define-color red             #cc241d;
+@define-color bright_red      #fb4934;
+@define-color green           #98971a;
+@define-color bright_green    #b8bb26;
+@define-color yellow          #d79921;
+@define-color bright_yellow   #fabd2f;
+@define-color blue            #458588;
+@define-color bright_blue     #83a598;
+@define-color purple          #b16286;
+@define-color bright_purple   #d3869b;
+@define-color aqua            #689d6a;
+@define-color bright_aqua     #8ec07c;
+@define-color orange          #d65d0e;
+@define-color bright_orange   #fe8019;
+
+/* Gruvbox Light */
+
+@define-color bg0_h           #f9f5d7;
+@define-color bg0             #fbf1c7;
+@define-color bg1             #ebdbb2;
+@define-color bg2             #d5c4a1;
+@define-color bg3             #bdae93;
+@define-color bg4             #a89984;
+@define-color gray            #928374;
+@define-color fg4             #7c6f64;
+@define-color fg3             #665c54;
+@define-color fg2             #504945;
+@define-color fg1             #3c3836;
+@define-color fg0             #282828;
+@define-color red             #cc241d;
+@define-color bright_red      #9d0006;
+@define-color green           #98971a;
+@define-color bright_green    #79740e;
+@define-color yellow          #d79921;
+@define-color bright_yellow   #b57614;
+@define-color blue            #458588;
+@define-color bright_blue     #076678;
+@define-color purple          #b16286;
+@define-color bright_purple   #8f3f71;
+@define-color aqua            #689d6a;
+@define-color bright_aqua     #427b58;
+@define-color orange          #d65d0e;
+@define-color bright_orange   #af3a03;

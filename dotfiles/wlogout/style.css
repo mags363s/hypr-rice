@@ -1,0 +1,55 @@
+window {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo con blur (vía Hyprland) */
+}
+
+button {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%; /* AQUÍ CONTROLAS EL TAMAÑO DEL ICONO */
+    border: none;
+    background-color: rgba(30, 30, 46, 0);
+    margin: 10px;
+    transition: all 0.3s ease;
+}
+
+button {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+    border: none;
+    /* Forzamos fondo transparente inicial */
+    background-color: rgba(30, 30, 46, 0);
+    box-shadow: none;
+    text-shadow: none;
+    margin: 10px;
+    transition: all 0.3s ease;
+}
+
+/*
+ *   Quitamos el fondo grisáceo que GTK pone por defecto al "foco".
+ *   Solo aplicamos color cuando el puntero del mouse está encima (hover)
+ */
+button:focus {
+    background-color: rgba(255, 255, 255, 0); /* Sigue transparente aunque tenga el foco */
+    outline: none;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Solo se ilumina al pasar el mouse */
+    border-radius: 20px;
+}
+
+
+/* TUS ICONOS PERSONALIZADOS */
+#lock {
+    background-image: url("powermenu/icons/lockscreen.png");
+}
+#logout {
+    background-image: url("powermenu/icons/logout.png");
+}
+#reboot {
+    background-image: url("powermenu/icons/reboot.png");
+}
+#shutdown {
+    background-image: url("powermenu/icons/shutdown.png");
+}

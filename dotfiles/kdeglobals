@@ -1,0 +1,14 @@
+[General]
+TerminalApplication=kitty
+TerminalService=kitty.desktop
+
+[KDE]
+ShowDeleteCommand=false
+
+[PreviewSettings]
+EnableRemoteFolderThumbnail=false
+MaximumRemoteSize=1048576000
+
+[Icons]
+Theme=BeautyLine
+

@@ -1,0 +1,80 @@
+{
+  "positionX": "right",
+  "positionY": "top",
+  "layer": "overlay",
+  "control-center-layer": "top",
+  "control-center-positionX": "right",
+  "control-center-positionY": "top",
+  "control-center-exclusive-zone": false,
+  "layer-shell": true,
+  "layer-shell-cover-screen": false,
+  "cssPriority": "user",
+  "control-center-margin-top": 0,
+  
+  "control-center-margin-right": 0,
+  "control-center-margin-left": 0,
+  "notification-2fa-action": true,
+  "notification-inline-replies": false,
+  "notification-icon-size": 64,
+  "notification-body-image-height": 100,
+  "notification-body-image-width": 200,
+  "timeout": 10,
+  "timeout-low": 5,
+  "timeout-critical": 0,
+  "fit-to-screen": false,
+  "control-center-width": 360,
+  "control-center-height": 1040,
+  "control-center-margin-bottom": 10,
+  "notification-window-width": 360,
+  "keyboard-shortcuts": true,
+  "image-visibility": "when-available",
+  "transition-time": 200,
+  "hide-on-clear": false,
+  "hide-on-action": true,
+  "script-fail-notify": true,
+  "widgets": [
+    "title",
+    "dnd",
+    "notifications",
+    "mpris",
+    "volume",
+    "backlight",
+    "bluetooth",
+    "wifi",
+    "label",
+    "buttons-grid"
+  ],
+  "widget-config": {
+    "title": {
+      "text": "Centro de Notificaciones",
+      "clear-all-button": true,
+      "button-text": "Limpiar Todo"
+    },
+    "dnd": {
+      "text": "No Molestar"
+    },
+    "label": {
+      "text": "📅 Hoy: 2026-05-05"
+    },
+    "buttons-grid": {
+      "buttons-per-row": 1,
+      "actions": [
+        {
+          "label": "Abrir Calendario",
+          "command": "gnome-calendar"
+        }
+      ]
+    },
+    "mpris": {
+      "image-size": 96,
+      "image-radius": 12
+    },
+    "bluetooth": {
+      "label": "Bluetooth"
+    },
+    "wifi": {
+      "label": "Red"
+    }
+  }
+
+}

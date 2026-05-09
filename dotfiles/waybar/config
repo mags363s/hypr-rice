@@ -1,0 +1,340 @@
+
+//* -------- 💫 https://www.youtube.com/@Ruben-Linux 💫 -------- */
+//* ............ Modules for waybar configuration .......... */
+//* ----------- 👍 designed by: Ruben_&_Linux:~  👍 ------- */
+
+{
+  "layer": "top",
+  "position": "top",
+  "height": 30,
+  "spacing": 1,
+  "modules-left": [
+    "custom/launcher",
+    "hyprland/workspaces",
+    "disk",
+    "hyprland/mode",
+    "hyprland/taskbar",
+    "hyprland/scratchpad"
+    //"custom/notifications"
+  ],
+  "modules-center": [
+    //"hyprland/window"
+    "custom/media",
+    "custom/progress",
+    "custom/prev",
+    "custom/play",
+    "custom/next",
+    "mpris"
+  ],
+  "modules-right": [
+    "idle_inhibitor",
+    "pulseaudio",
+    //"network",
+//  "power-profiles-daemon",
+    "cpu",
+    "memory",
+    "custom/temperature",
+    //"custom/bluetooth",
+    "backlight",   
+    "custom/weather",
+//  "backlight/slider",
+//  "keyboard-state",
+//  "hyprland/language",
+    "battery",
+    "battery#bat2",
+    "clock",
+    "tray",
+    "custom/power"
+  ],
+
+  "hyprland/taskbar": {
+    "on-click": "activate",
+    "on-click-middle": "close",
+    "ignore-list": [
+    "foot"
+    ]
+  },
+
+  "hyprland/workspaces": {
+    "on-click": "activate",
+    "on-scroll-up": "hyprctl dispatch workspace e-1",
+    "on-scroll-down": "hyprctl dispatch workspace e+1"
+  },
+
+  "hyprland/window": {
+    "max-length": 128
+  },
+
+  "keyboard-state": {
+        "numlock": true,
+        "capslock": true,
+        "format": "{name} {icon}",
+        "format-icons": {
+            "locked": " ",
+            "unlocked": " "
+        }
+  },
+  "hyprland/mode": {
+        "format": "<span style=\"italic\">{}</span>"
+  },
+  "hyprland/scratchpad": {
+        "format": "{icon} {count}",
+        "show-empty": false,
+        "format-icons": ["", ""],
+        "tooltip": true,
+        "tooltip-format": "{app}: {title}"
+  },
+
+   "disk": {
+    //"format": " {used} of {total} GiB",
+    "format": "<span foreground='#00ff99'></span> <span foreground='#f5f5f5'>{used} de {total}</span>",
+    "format-alt": "<span foreground='#00ff99'></span> <span foreground='#f5f5f5'>{percentage_used}%</span>",
+    //"format-alt": " {percentage_used}%",
+    "interval": 5,
+    "path": "/"
+  },
+  
+  "mpris": {
+       // "format": "{status_icon} | {dynamic} ",
+        //"format": " | {dynamic} ",
+        "format": " | {artist} - {title} ",
+        "interval": 1,
+        "dynamic-len": 40,
+        "status-icons": {
+            "playing": "▶",
+            "paused": "⏸",
+            "stopped": ""
+        },
+        "dynamic-order": ["artist","title"]
+  },
+
+  "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+        "activated": " ",
+        "deactivated": " "
+        }
+  },
+
+  "clock": {
+        "on-click-right": "kitty -e tty-clock -cbu",
+        "timezone": "America/Mexico_City",
+        "format": "{:%I:%M %p}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-%d } "
+  },
+
+  "tray": {
+    "icon-size": 15,
+    "spacing": 8
+  },
+ "custom/weather": {
+   "exec": "~/.config/waybar/scripts/weather.sh",
+   "return-type": "json",
+    "format": "{}",
+    "tooltip": true,
+    "interval": 300
+ }, 
+  "cpu": {
+        "interval": 5,
+        //"format": "{usage}% ",
+        "format": "<span foreground='#ff00ff'>{icon}</span> <span foreground='#f5f5f5'>{usage}%</span>",
+        "format-alt": "<span foreground='#ff00ff'>{icon}</span> <span foreground='#f5f5f5'>{avg_frequency} GHz</span> ",
+        //"format-alt": "󰻠 {avg_frequency} GHz",
+        "on-click": "~/.config/waybar/scripts/cpu-btop.sh",
+        "on-click-right": "",
+        "tooltip": false
+  },
+
+
+  "memory": {
+        //"format": "  {used} of {total} GiB",
+        "format": "<span foreground='#00ffff'>{icon} </span><span foreground='#f5f5f5'>{used} of {total} GiB</span> ",
+        //"format-alt": "  {}%",
+        "format-alt": "<span foreground='#00ffff'>{icon}</span> <span foreground='#f5f5f5'>{used}%</span> ",
+        "interval": 5,
+        "on-click": "foot -e glances",
+        "on-click-right": "foot -e htop",
+        "on-click-right": "~/.config/waybar/scripts/memory-htop.sh"
+  },
+
+  "custom/temperature": {
+    "exec": "~/.config/waybar/scripts/temp_pro.sh",
+    "interval": 2,
+    "return-type": "json"
+  },
+
+//  "bluetooth": {
+//        "format": "{icon}",
+//        "format-alt": "bluetooth: {status}",
+//        "on-click-right": "blueman-manager",
+//        "format-icons": {
+//            "enabled": "",
+//            "disabled": ""
+//        },
+//        "tooltip-format": "{}"
+//  },
+
+  "custom/bluetooth": {
+        "exec": "~/.config/waybar/scripts/bluetooth.sh",
+        "interval": 5,
+        "format": "{}",
+        "on-click": "blueman-manager",
+        "tooltip": true
+},  
+
+
+  "backlight": {
+        // "device": "acpi_video1",
+        "format": "{percent}% {icon}",
+        "format-icons": [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+  },
+
+  "battery": {
+        "states": {
+            // "good": 95,
+            "warning": 30,
+            "critical": 15
+  },
+
+        "format": "{capacity}% {icon}",
+        "format-full": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon}",
+        // "format-good": "", // An empty format will hide the module
+        // "format-full": "",
+        "format-icons": ["", "", "", "", ""]
+  },
+
+  "battery#bat2": {
+        "bat": "BAT2"
+  },
+
+  "power-profiles-daemon": {
+      "format": "{icon}",
+      "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+      "tooltip": true,
+      "format-icons": {
+        "default": "",
+        "performance": "",
+        "balanced": "",
+        "power-saver": ""
+      }
+   },
+   //"network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+   //     "format-ethernet": "{essid}  ",
+        //"format-ethernet": "{essid} ({signalStrength}%)  ",
+        //"format-ethernet": "{ipaddr}/{cidr} ",
+   //     "tooltip-format": "{ifname} via {gwaddr} ",
+   //     "format-linked": "{ifname} (No IP) ",
+   //     "format-disconnected": "Disconnected ⚠",
+   //     "format-alt": "{ifname}: {ipaddr}/{cidr}",
+   //     "on-click-right": "nm-applet"
+   //},
+
+    "custom/media": {
+      "exec": "~/.config/waybar/scripts/media.sh",
+      "return-type": "json",
+      "interval": 2,
+
+      "on-click": "playerctl play-pause",
+      "on-click-right": "playerctl next",
+      "on-click-middle": "playerctl previous"
+    },
+
+    "custom/prev": {
+      "exec": "playerctl status >/dev/null 2>&1 && echo '⏮ '",
+      "interval": 1,
+      "on-click": "playerctl previous"
+    },
+
+    "custom/play": {
+      "exec": "~/.config/waybar/scripts/play.sh",
+      "return-type": "json",
+      "interval": 1,
+      "on-click": "playerctl play-pause"
+    },
+
+    "custom/next": {
+      "exec": "playerctl status >/dev/null 2>&1 && echo ' ⏭'",
+      "interval": 1,
+      "on-click": "playerctl next"
+    },
+
+    "custom/progress": {
+      "exec": "~/.config/waybar/scripts/progress.sh",
+      "interval": 1
+    },
+
+    "backlight/slider": {
+       "min": 0,
+       "max": 100,
+       "orientation": "vertical",
+       "device": "intel_backlight"
+    },
+
+    "custom/launcher": {
+        "format":"  ",
+        "icon-size": 22,
+    	"on-click": "exec nwggrid -c 7 -is 70 -spacing 23",
+    	"tooltip": false,
+    },
+
+    "custom/power": {
+        "format" : " ⏻ ",
+        //"on-click": "hyprlock",
+        "on-click": "wlogout -b 4 --protocol layer-shell", // El -b 4 lo pone en una fila de 4
+        "tooltip": false,
+        //"menu": "on-click",
+        "menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu fi>
+        "menu-actions": {
+                "shutdown": "loginctl poweroff",
+                "reboot": "loginctl reboot",
+                "logout": "loginctl terminate-user $USER",
+                "hibernate": "loginctl suspend"
+        }
+    },
+
+    "hyprland/language": {
+        "format-es": "[es]",
+        "format-en": "[us]",
+        "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next"
+    },
+
+     "pulseaudio": {
+    //"scroll-step": 1,
+    "format": "<span foreground='#ff00ff'>{icon}</span><span foreground='#f5f5f5'>{volume}%</span> <span foreground='#00ff99'>{format_source}</span>",
+    "format-bluetooth": "<span foreground='#00FFFF'>{icon}</span><span foreground='#f5f5f5'>{volume}%</span>",
+    "format-muted": "<span foreground='#ff004c'></span>",
+    "format-source": "",
+    "format-source-muted": "",
+    "format-icons": {
+        "default": ["", "", ""]
+    },
+    "on-click": "pavucontrol"
+},
+
+    "custom/notifications": {
+        "format": "🔔 {icon}",
+        "format-icons": {
+        "notification": "<span foreground='red'><sup></sup></span>",
+        "none": "",
+        "dnd-notification": "<span foreground='red'><sup></sup></span>",
+        "dnd-none": "",
+        "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+        "inhibited-none": "",
+        "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+        "dnd-inhibited-none": ""
+     },
+      "return-type": "json",
+      "exec-if": "which swaync-client",
+      "exec": "swaync-client -swb",
+      "on-click": "swaync-client -t",
+      "on-click-right": "swaync-client -d",
+      "escape": true,
+      "tooltip": false
+     },
+}
+

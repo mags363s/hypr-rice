@@ -1,0 +1,379 @@
+
+/* ------- 💫 https://www.youtube.com/@Ruben-Linux 💫 ------- */
+/* ................. Style: Purple & White ............... */
+/* ----------- 👍 designed by: Ruben_&_Linux:~  👍 ------- */
+
+* {
+	font-family: "JetBrains Mono Nerd Font", "Font Awesome 7 Free", "Roboto", "Noto Sans";
+	font-weight: bold;
+	min-height: 0;		
+	font-size: 99%;
+	font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+}
+
+window#waybar {
+	/*background: #100214;*/
+  background-color: transparent;
+	color: #cba6f7;
+}
+
+window#waybar.hidden {
+	opacity: 0.5;
+}
+
+window#waybar.empty,
+window#waybar.empty #window {
+	padding: 0px;
+	border: 0px;
+	background-color: transparent;
+}
+
+tooltip {
+	background: #1e1e2e;
+	border-radius: 10px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #11111b;
+	color: #cba6f7;
+}
+
+/*-----module groups----*/
+.modules-right {
+	border: 3px solid #20052a;
+	border-radius: 0px 50px 0px 50px;
+	/*background-color: #3d174b;*/
+	/*background-color: rgba(61,23,75,0.8);*/
+	background-color: rgba(77, 238, 234, 0.2);
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-right: 4px;
+	padding-left: 4px;
+}
+
+.modules-center {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-right: 4px;
+	padding-left: 4px;
+}
+
+.modules-left {
+	/*background-color: #1e1e2e;*/
+	border: 3px solid #20052a;
+	border-radius: 50px 0px 50px 0px;
+	/*background-color: #441a53;*/
+	background-color: rgba(77, 238, 234, 0.2);
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-right: 4px;
+	padding-left: 4px;
+}
+
+#workspaces button {
+	color: #6E6A86;
+    box-shadow: none;
+	text-shadow: none;
+    padding: 0px;
+    border-radius: 9px;
+    padding-left: 4px;
+    padding-right: 4px;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#workspaces button.active {
+	color: #cba6f7;
+	border-radius: 50%;
+	background-color: black;
+    padding-left: 8px;
+    padding-right: 8px;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#workspaces button.focused {
+	color: #d8dee9;
+}
+
+#workspaces button.urgent {
+	color: #11111b;
+	border-radius: 10px;
+}
+
+#workspaces button:hover {
+	color: #9CCFD8;
+    border-radius: 15px;
+ 	padding-left: 2px;
+    padding-right: 2px;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#custom-launcher {
+padding-left: 5px;
+padding-right: 5px;
+font-size: 21px;
+color: rgb(4, 165, 229);
+}
+
+#backlight,
+#backlight-slider,
+#battery,
+#bluetooth,
+#clock,
+#cpu,
+#disk,
+#idle_inhibitor,
+#keyboard-state,
+#memory,
+#mode,
+#mpris,
+#network,
+#power-profiles-daemon,
+#pulseaudio,
+#pulseaudio-slider,
+#taskbar,
+*#temperature,
+#tray,
+#window,
+#wireplumber,
+#workspaces,
+#custom-backlight,
+#custom-browser,
+#custom-cava_mviz,
+#custom-cycle_wall,
+#custom-file_manager,
+#custom-keybinds,
+#custom-keyboard,
+#custom-light_dark,
+#custom-lock,
+#custom-hint,
+#custom-hypridle,
+#custom-menu,
+#custom-power_vertical,
+#custom-settings,
+#custom-spotify,
+#custom-swaync,
+#custom-tty,
+#custom-updater,
+#custom-weather,
+#custom-weather.clearNight,
+#custom-weather.cloudyFoggyDay,
+#custom-weather.cloudyFoggyNight,
+#custom-weather.default, 
+#custom-weather.rainyDay,
+#custom-weather.rainyNight,
+#custom-weather.severe,
+#custom-weather.showyIcyDay,
+#custom-weather.snowyIcyNight,
+#custom-weather.sunnyDay {
+	/*color: whitesmoke;*/
+	color: whitesmoke;
+    text-shadow: 0 0 5px #00ffff, 0 0 10px #ff00ff;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-right: 6px;
+	padding-left: 6px;
+}
+
+
+
+#idle_inhibitor {
+  margin-left: 10px;
+  color: #ff0000;
+}
+
+#disk {
+  margin-right: 10px;
+  text-shadow: 0 0 5px #00ffff, 0 0 10px #ff00ff;
+}
+
+#custom-temperature {
+  color: #00ff99;
+  text-shadow: 0 0 6px #00ff99;
+  padding: 0 8px;
+}
+
+/* temperatura media */
+#custom-temperature.warning {
+  color: #ffcc00;
+  text-shadow: 0 0 6px #ffcc00;
+}
+
+/* temperatura alta */
+#custom-temperature.critical {
+  color: #ff0033;
+  text-shadow: 0 0 10px #ff0033;
+  animation: pulse 1s infinite;
+}
+
+/* animación crítica */
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+@keyframes blink {
+	to {
+		color: #000000;
+	}
+}
+
+/*-----Indicators----*/
+#custom-hypridle.notactive,
+#idle_inhibitor.activated {
+	color: #39FF14;
+}
+
+#taskbar button.active {
+	background-color: purple;
+    padding-left: 12px;
+    padding-right: 12px;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#taskbar button:hover {
+    padding-left: 3px;
+    padding-right: 3px;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#battery.critical:not(.charging) {
+	color: #f53c3c;
+	animation-name: blink;
+	animation-duration: 3.0s;
+	animation-timing-function: steps(12);
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+#pulseaudio-slider slider {
+	min-width: 0px;
+	min-height: 0px;
+	opacity: 0;
+	background-image: none;
+	border: none;
+	box-shadow: none;
+}
+
+#pulseaudio-slider trough {
+	min-width: 80px;
+	min-height: 5px;
+	border-radius: 5px;
+	background-color: #6E6A86;
+}
+
+#pulseaudio-slider highlight {
+	min-height: 10px;
+	border-radius: 5px;
+	background-color: purple;
+}
+
+#backlight-slider slider {
+	min-width: 0px;
+	min-height: 0px;
+	opacity: 0;
+	background-image: none;
+	border: none;
+	box-shadow: none;
+}
+
+#backlight-slider trough {
+	min-width: 80px;
+	min-height: 10px;
+	border-radius: 5px;
+	background-color: #6E6A86;
+}
+
+#backlight-slider highlight {
+	min-width: 10px;
+	border-radius: 5px;
+	background-color: purple;
+}
+
+#custom-power {
+padding-left: 3px;
+padding-right: 5px;
+font-size: 19px;
+color: rgb(210, 15, 57);
+}
+
+/* INFO (Spotify / YouTube) */
+#custom-media.spotify {
+  color: #1DB954;
+  font-size: 18px;
+  text-shadow: 0 0 6px #1DB954;
+}
+
+#custom-media.youtube {
+  color: #FF0000;
+  font-size: 18px;
+  text-shadow: 0 0 6px #FF0000;
+}
+
+/* BOTONES */
+#custom-prev {
+  color: #00ffff;
+  text-shadow: 0 0 6px #00ffff;
+}
+
+/*#custom-play {
+  color: #ff00ff;
+  text-shadow: 0 0 6px #ff00ff;
+  font-size: 23px;
+}*/
+
+/* PLAY */
+#custom-play.play {
+  font-size: 14px;
+  color: #ff00ff;
+  text-shadow: 0 0 6px #ff00ff;
+}
+
+/* PAUSE */
+#custom-play.pause {
+  font-size: 23px;
+  color: #ff00ff;
+  text-shadow: 0 0 6px #00ffff;
+}
+
+#custom-next {
+  color: #00ff99;
+  text-shadow: 0 0 6px #00ff99;
+}
+
+/* hover opcional */
+#custom-prev:hover,
+#custom-play:hover,
+#custom-next:hover {
+  opacity: 0.7;
+}
+
+#custom-progress {
+  color: #00ffff;
+  font-family: monospace;
+  letter-spacing: 1px;
+  text-shadow: 0 0 6px #00ffff, 0 0 12px #00ffff;
+}
+
+#custom-weather {
+  font-size: 14px;
+  color: #00ffcc;
+  text-shadow: 0 0 6px #00ffcc;
+  padding: 4px 10px;
+  border-radius: 8px;
+}
+
+#custom-weather:hover {
+  color: #ff00ff;
+  text-shadow: 0 0 10px #ff00ff;
+}
