@@ -83,7 +83,6 @@ sudo ln -sf ~/.zshrc /root/.zshrc
 
 #Powerlevel10k
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
-sudo git clone --depth=1 https://github.com/romkatv/powerlevel10k.git /root/powerlevel10k
 cp -rv dotfiles/.p10k.zsh ~/
 
 
