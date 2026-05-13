@@ -37,7 +37,7 @@ fi
 
 echo "[*] Instalando paquetes AUR..."
 
-yay -S --needed --noconfirm beautyline candy-icons-git dislocker httpdirfs hyprprop-git jmtpfs mintstick nwg-launchers simple-mtpfs sweet-kvantum-git sweet-theme-git ttf-wps-fonts tty-clock wlogout
+yay -S --needed --noconfirm beautyline candy-icons-git dislocker httpdirfs hyprprop-git jmtpfs mintstick nwg-launchers simple-mtpfs sweet-kvantum-git sweet-theme-git ttf-wps-fonts tty-clock wlogout opera-gx
 
 # =========================================
 # CONFIGS
